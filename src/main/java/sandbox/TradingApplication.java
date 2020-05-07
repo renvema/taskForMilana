@@ -27,7 +27,6 @@ public class TradingApplication {
         log.info("Spring application started successful");
         List<Stock> listStock = stockService.getStocksInfoFromWeb();
         stockService.addStocksInfoToDataBase(listStock);
-        log.info("Data symbols/names/state for each trading company added to DB");
-
+        log.info("Trading company added to DB");
     }
 }
